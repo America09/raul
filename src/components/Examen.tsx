@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 
 interface Publicacion {
   id: number;
@@ -20,7 +20,7 @@ export const Examen: React.FC = () => {
   const [idPublicacionActiva, setIdPublicacionActiva] = useState<number | null>(null);
 
   useEffect(() => {
-    // Simular la carga de publicaciones
+    
     setPublicaciones(publicacionesSimuladas);
   }, []);
 

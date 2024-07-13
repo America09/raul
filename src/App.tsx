@@ -6,6 +6,7 @@ import CronometroPage from './pages/CronometroPage';
 import ChatPage from './pages/ChatPage';
 import HeroPage from './pages/HeroPage';
 import LazyPage from './pages/LazyPage';
+import DestinosPage from './pages/DestinosPage';
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
         <Route path="/chat" element={<ChatPage />} />
         <Route path="/lazy" element={<LazyPage />} />
         <Route path="/hero/:id" element={<HeroPage />} />
+        <Route path="/destinos" element={<DestinosPage />} />
+
       </Routes>
     </Router>
   );
